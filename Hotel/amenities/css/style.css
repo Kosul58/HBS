@@ -1,0 +1,127 @@
+
+.amenities {
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 1.4rem;
+    background: #fff;
+    padding: 2.5rem 3.125rem 2.5rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    margin: 120px 180px;
+}
+
+input {
+    display: none;
+}
+
+.am-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.am-list {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 2;
+    width: 20%;
+    margin-right: 3rem;
+}
+
+.am-list label {
+    height: 3.75rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: .3rem 0;
+    border-radius: .5rem;
+    line-height: 3.75rem;
+    padding-left: 1rem;
+    transition: .3s;
+}
+
+.am-list label:hover {
+    color: rgb(87, 16, 153);
+}
+
+#home:checked ~ .am-content > .am-list > .home {
+    background: rgb(104, 26, 177);
+    color: white;
+}
+
+#blog:checked ~ .am-content > .am-list > .blog {
+    background: rgb(104, 26, 177);
+    color: white;
+}
+
+#help:checked ~ .am-content > .am-list > .help {
+    background: rgb(104, 26, 177);
+    color: white;
+}
+
+#code:checked ~ .am-content > .am-list > .code {
+    background: rgb(104, 26, 177);
+    color: white;
+}
+
+#about:checked ~ .am-content > .am-list > .about {
+    background: rgb(104, 26, 177);
+    color: white;
+}
+
+.text-block {
+    width: 80%;
+    height: 100%;
+}
+
+.text-block h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.text-block p {
+    text-align: justify;
+    line-height: 1.8rem;
+}
+
+.text-block .text {
+    display: none;
+}
+
+#home:checked ~ .am-content > .text-block > .home {
+    display: block;
+}
+
+#blog:checked ~ .am-content > .text-block > .blog {
+    display: block;
+}
+
+#help:checked ~ .am-content > .text-block > .help {
+   display: block;
+}
+
+#code:checked ~ .am-content > .text-block > .code {
+   display: block;
+}
+
+#about:checked ~ .am-content > .text-block > .about {
+    display: block;
+}
+
+
+/* Responsive on 730px */
+
+@media (max-width: 730px) {
+    .am-content {
+        flex-direction: column;
+    }
+
+    .am-content .am-list {
+        margin-bottom: 2rem;
+        max-width: 14rem;
+        width: 100%;
+    }
+
+    .text-block {
+        width: 100%;
+    }
+}
