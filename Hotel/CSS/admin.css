@@ -1,0 +1,40 @@
+body{
+    background-color: rgba(155, 60, 60, 0.8);
+    background-image: url(/IMG/cool-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.admincont{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.admin{
+    margin-top: 6rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    height: 80vh;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(94, 48, 48, 0.5);
+    backdrop-filter: blur(15px);
+    text-align: center;
+
+    
+}
+
+.ad1{
+    background-color: rgba(94, 48, 48, 0.65);
+    width: 300px;
+    border-radius: 15px 0 0 15px;
+}
+
+.ad2{
+    background-color: rgba(94, 48, 48, 0.5);
+    width: 850px;
+    border-radius: 0 15px 15px 0px;
+}
